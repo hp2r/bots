@@ -28,15 +28,18 @@ export default function Form() {
     <>
       NOTE: all input will automatically output to lowercase. Non alphabet
       characters will be ignored in the output
-      <br />
-      <select
-        name="directions"
-        id="directionType"
-        onChange={(e) =>  setDirection(e.target.value as DirectionTypes)}
-      >
-        <option value={DirectionTypes.LEFT}>Left</option>
-        <option value={DirectionTypes.RIGHT}>Right</option>
-      </select>
+      <br /><br />
+      <label>
+        Caeser direction:{' '}
+        <select
+            name="directions"
+            id="directionType"
+            onChange={(e) =>  setDirection(e.target.value as DirectionTypes)}
+        >
+            <option value={DirectionTypes.LEFT}>Left</option>
+            <option value={DirectionTypes.RIGHT}>Right</option>
+        </select>
+      </label>
       <br />
       <label>
         Caeser shift:{' '}
